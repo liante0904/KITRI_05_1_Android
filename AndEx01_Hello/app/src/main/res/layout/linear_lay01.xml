@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="빨강"
+        android:background="#FF0000"
+        android:layout_weight="2"
+        />
+    <!--layout_weight :: 비중 ,, dp :: 안드로이드 폰에서 크기가 다르기 때문에 사용하는개념-->
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="주황"
+        android:background="#FFBB00"
+        android:layout_weight="1"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="파랑"
+        android:background="#0000BB"
+        android:layout_weight="1"
+        />
+</LinearLayout>

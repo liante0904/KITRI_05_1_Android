@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text01"
+
+        android:id="@+id/button"
+        android:singleLine="true"
+        android:onClick="click01" />
+    <!-- 어노테이션 @string을 하면 strings.xml
+        리소스에서 참조된 값을 불러온다.-->
+</LinearLayout>
