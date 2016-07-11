@@ -12,6 +12,13 @@
         android:layout_weight="1"
         android:background="#FF9021"
         >
+        <ImageButton
+            android:id="@+id/Vgugudan_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backkey"
+            android:layout_gravity="left"
+            />
         <TextView
             android:id="@+id/voutput"
             android:layout_width="match_parent"

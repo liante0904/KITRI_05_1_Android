@@ -1,4 +1,4 @@
-﻿
+
 #built application files
 
 *.apk
@@ -58,3 +58,4 @@ Thumbs.db
 .gradle/
 
 build/
+AndEx00_Hello.zip

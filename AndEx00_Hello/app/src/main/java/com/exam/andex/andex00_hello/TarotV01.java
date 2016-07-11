@@ -3,6 +3,7 @@ package com.exam.andex.andex00_hello;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,6 +19,7 @@ public class TarotV01 extends Activity implements View.OnClickListener {
 
     private ImageView MainImgView;
     private TextView MainTextView;
+    private ImageButton backbt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,8 @@ public class TarotV01 extends Activity implements View.OnClickListener {
         setContentView(R.layout.tarotv01);
         MainImgView = (ImageView) findViewById(R.id.MainImgView);
         MainTextView = (TextView) findViewById(R.id.MainTextView);
+        backbt = (ImageButton) findViewById(R.id.Vtaro_back);
+        backbt.setOnClickListener(this);
         MainImgView.setOnClickListener(this);
         MainTextView.setOnClickListener(this);
 
@@ -43,5 +47,8 @@ public class TarotV01 extends Activity implements View.OnClickListener {
         int taro = UserObj.getRandom(imgsrc.length)-1; // 1~10반환
         MainImgView.setImageResource(imgsrc[taro]);
         MainTextView.setText(textsrc[taro]);
+        if (v.getId() == R.id.Vtaro_back){
+            finish();
+        }
     }
 }

@@ -47,27 +47,31 @@
             android:layout_weight="1"
             >
             <Button
+                android:id="@+id/Voutline_gugudanBT"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
-                android:text="test"/>
+                android:text="GuGuDanV01"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            ><Button
+            >
+            <Button
+                android:id="@+id/Voutline_calculBT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="test"/></LinearLayout>
+            android:text="CalculatorV01"/></LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            ><Button
+            >
+            <Button
+            android:id="@+id/Voutline_imageBT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="test"/></LinearLayout>
+            android:text="ImageChangeV01"/></LinearLayout>
     </LinearLayout></LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -84,18 +88,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                ><Button
+                >
+                <Button
+                android:id="@+id/Voutline_taroBT"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="test"/></LinearLayout>
+                android:text="TaroV01"/></LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 ><Button
+                android:id="@+id/Voutline_gawibawiBT"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="test"/></LinearLayout>
+                android:text="GawiBawiBo"/></LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

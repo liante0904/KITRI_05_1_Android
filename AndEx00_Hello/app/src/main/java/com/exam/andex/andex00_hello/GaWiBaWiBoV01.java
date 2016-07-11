@@ -26,6 +26,8 @@ public class GaWiBaWiBoV01 extends Activity implements View.OnClickListener{
     int pcInput; // 사용자가 선택한 flag
 
 
+    private ImageButton backbt;
+
     int[] gameimgs = {R.id.g_a_cy, R.id.g_b_ro, R.id.g_c_pa};
     int[] gameimgs2 = {R.drawable.g_a_cy, R.drawable.g_b_ro, R.drawable.g_c_pa};
     // 사용자가 입력할 이미지 버튼 메모리주소
@@ -38,7 +40,8 @@ public class GaWiBaWiBoV01 extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gawibawibov01);
 
-
+        backbt = (ImageButton) findViewById(R.id.Vgawi_back);
+        backbt.setOnClickListener(this);
 
         vResult = (Button) findViewById(R.id.vResult);
         vResult.setOnClickListener(this);
@@ -69,6 +72,7 @@ public class GaWiBaWiBoV01 extends Activity implements View.OnClickListener{
     @Override
     public void onClick(View v) {
 
+
         // 가위 = 0
         // 바위 = 1
         // 보 = 2
@@ -84,6 +88,8 @@ public class GaWiBaWiBoV01 extends Activity implements View.OnClickListener{
                 result += "사용자가가 이기고 있습니다.";
             }else if(pcScore_num == userScore_num){
                 result += "현재 무승부 중입니다.";
+            }else if (v.getId()== R.id.Vgawi_back){
+                finish();
             }
 
             vTextresult.setText(result);
@@ -99,18 +105,22 @@ public class GaWiBaWiBoV01 extends Activity implements View.OnClickListener{
                 userInput = 1;
             } else if (userInput == R.id.g_c_pa) { // 사용자가 보를 냈을 경우
                 userInput = 2;
-            } else
+            } else if (v.getId() == R.id.Vgawi_back){
+                finish();
+            } else {
                 System.out.print(userInput);
-            userImgButton.setImageResource(gameimgs2[userInput]); // 사용자가 결정한 flag 이미지 전송
-            pcImgButton.setImageResource(gameimgs2[pcInput]); // 컴퓨터가 결정한 flag 이미지 전송
-
+                userImgButton.setImageResource(gameimgs2[userInput]); // 사용자가 결정한 flag 이미지 전송
+                pcImgButton.setImageResource(gameimgs2[pcInput]); // 컴퓨터가 결정한 flag 이미지 전송
+            }
 
             // 사용자와 컴퓨터 승부 판별부
             if (userInput == pcInput) { // 서로 같을경우 (draw처리)
                 drawScore_num += 1;
             } else if (userInput == 0 && pcInput == 2 || userInput == 1 && pcInput == 0 || userInput == 2 && pcInput == 1) { // 사용자가 이겼을 경우
                 userScore_num += 1;
-            } else { //사용자가 졌을 경우
+            } else if (v.getId() == R.id.Vgawi_back){
+                finish();
+            }else { //사용자가 졌을 경우
                 pcScore_num += 1;
             }
         }

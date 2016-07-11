@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 /**
@@ -23,6 +24,7 @@ public class GuGuDan01 extends Activity implements View.OnClickListener {
     int btns[] = {R.id.guBtn, R.id.guretBtn}; // 버튼이 담긴 배열
     Button btn[] = new Button[btns.length];     // 버튼 타입의 배열 생성
 
+    private ImageButton backbt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,8 @@ public class GuGuDan01 extends Activity implements View.OnClickListener {
         guBtn = (Button) findViewById(R.id.guBtn); // 구구단 버튼
         guretBtn = (Button) findViewById(R.id.guretBtn); // 리셋버튼
 
+        backbt = (ImageButton) findViewById(R.id.Vgugudan_back);
+        backbt.setOnClickListener(this);
 
         // 버튼이 담긴배열을 버튼타입의 배열만큼 담는 반복문
         for (int i=0; i<btns.length; i++ ){
@@ -83,6 +87,8 @@ public class GuGuDan01 extends Activity implements View.OnClickListener {
         }else if(v.getId() == R.id.guretBtn){
             vinput = (EditText)findViewById(R.id.vinput);
             vinput.setText("");
+        }else if (v.getId()== R.id.Vgugudan_back){
+            finish();
         }
     }
 

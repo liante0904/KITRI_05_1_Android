@@ -14,14 +14,25 @@
         android:orientation="vertical"
 
         >
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageButton
+            android:id="@+id/Vcalcul_back"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Android Calculator"
-            android:gravity="center"
-            android:textSize="30sp"
-
+            android:src="@drawable/backkey"
+            android:layout_gravity="left"
             />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Calculator"
+                android:gravity="left"
+                android:textSize="30sp"
+                />
+        </LinearLayout>
 
         <EditText
             android:id="@+id/edt"

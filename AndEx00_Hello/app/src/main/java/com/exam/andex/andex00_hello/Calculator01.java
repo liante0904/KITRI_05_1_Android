@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 /**
  * Created by Administrator on 2016-07-06.
@@ -20,6 +21,8 @@ public class Calculator01 extends Activity implements View.OnClickListener {
 
     Button btn[] = new Button[btns.length];
 
+    private ImageButton backbt;
+
     private EditText edt;
     float num1 =0.0f, num2 = 0.0f, result =0.0f;
     int opp = 0;
@@ -29,6 +32,9 @@ public class Calculator01 extends Activity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calculator01);
+
+        backbt = (ImageButton) findViewById(R.id.Vcalcul_back);
+        backbt.setOnClickListener(this);
 
         //버튼 처리
         for (int i =0; i<btns.length; i++){
@@ -42,8 +48,6 @@ public class Calculator01 extends Activity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         edt = (EditText) findViewById(R.id.edt);
-        Button b = (Button) findViewById(v.getId());
-
         if (v.getId() == R.id.vMulitbt || v.getId() == R.id.vDivibt || v.getId() == R.id.vPlusbt || v.getId() == R.id.vsubtractbt) {
             //사칙연산 판별
             opp = v.getId();
@@ -71,8 +75,10 @@ public class Calculator01 extends Activity implements View.OnClickListener {
             edt.setText(Float.toString(result));
         } else if (v.getId() == R.id.vdotbt) { // 소수점버튼
             edt.setText(edt.getText()+".");
-        } else { //숫자 입력
-
+        } else if(v.getId() == R.id.Vcalcul_back){
+            finish();
+        }else { //숫자 입력
+            Button b = (Button) findViewById(v.getId());
             edt.setText(edt.getText().toString()+b.getText().toString());
 
 
