@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        >
+
+
+        <TableRow>
+            <EditText
+                android:text=""
+                android:layout_span="3"
+                />
+
+        </TableRow>
+        <TableRow>
+            <Button
+                android:layout_height="100dp"
+                android:layout_width="122dp"
+                android:text="1"
+                />
+            <Button
+                android:layout_height="100dp"
+                android:layout_width="122dp"
+                android:text="2"
+                />
+            <Button
+                android:layout_height="100dp"
+                android:layout_width="122dp"
+                android:text="3"
+                />
+
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:layout_height="100dp"
+                android:layout_width="122dp"
+                android:text="4"
+                />
+            <Button
+                android:layout_height="100dp"
+                android:layout_width="122dp"
+                android:text="5"
+                />
+            <Button
+                android:layout_height="100dp"
+                android:layout_width="122dp"
+                android:text="6"
+                />
+
+        </TableRow>
+
+
+        <TableRow>
+            <Button
+                android:layout_height="100dp"
+                android:layout_width="122dp"
+                android:text="7"
+                />
+            <Button
+                android:layout_height="100dp"
+                android:layout_width="122dp"
+                android:text="8"
+                />
+            <Button
+                android:layout_height="100dp"
+                android:layout_width="122dp"
+                android:text="9"
+                />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <Button
+                android:layout_column="1"
+                android:layout_height="100dp"
+                android:layout_width="122dp"
+                android:text="0"
+                />
+            <Button
+                android:layout_column="2"
+                android:layout_height="100dp"
+                android:layout_width="122dp"
+                android:text="Clear"
+                />
+
+        </TableRow>
+        <TableRow>
+
+            <Button
+                android:layout_height="60dp"
+                android:layout_width="122dp"
+                android:layout_span="3"
+                android:text="OK"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

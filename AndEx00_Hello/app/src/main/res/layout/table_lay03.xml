@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:stretchColumns="2"
+    >
+
+
+    <TableRow>
+        <EditText
+            android:id="@+id/TableLay03_editName1"
+            android:text="첫번째칸"
+            android:layout_span="0"
+            />
+
+
+    </TableRow>
+
+    <TableRow>
+
+
+        <EditText
+            android:id="@+id/TableLay03_editName2"
+            android:layout_column="2"
+            android:text="세번째칸"
+
+            />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="입력"/>
+
+        <Button
+            android:text="종료"
+            android:layout_span="1"/>
+
+    </TableRow>
+</TableLayout>
