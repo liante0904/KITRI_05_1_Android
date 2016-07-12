@@ -3,14 +3,16 @@ package com.exam.andex.andex00_hello;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by Administrator on 2016-07-11.
  */
-public class WeightChkV10 extends Activity implements View.OnClickListener {
+public class WeightChkV10 extends Activity implements View.OnClickListener{
 
     int btns[] = {R.id.Vweightchk_backActivity,R.id.Vweightchk_0BT,R.id.Vweightchk_1BT,R.id.Vweightchk_2BT,R.id.Vweightchk_3BT,R.id.Vweightchk_4BT,R.id.Vweightchk_5BT,
             R.id.Vweightchk_6BT,R.id.Vweightchk_7BT,R.id.Vweightchk_8BT,R.id.Vweightchk_9BT,R.id.Vweightchk_0BT, R.id.Vweightchk_dotBT,R.id.Vweightchk_goBT
@@ -22,38 +24,50 @@ public class WeightChkV10 extends Activity implements View.OnClickListener {
     float weight = 0.0F, length = 0.0F, result = 0.0F;
     private EditText weight_input, length_input;
     private TextView result_view;
-    int flag;
+
+    InputMethodManager imm;
+
+    int flag =0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.weightchk_v10);
 
+        imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
+        weight_input = (EditText) findViewById(R.id.Vweightchk_weight);
+        length_input = (EditText) findViewById(R.id.Vweightchk_length);
+        result_view = (TextView) findViewById(R.id.Vweightchk_resultView);
+
+
+
         for (int i =0; i<btns.length; i++){
             btn[i] = (Button) findViewById(btns[i]);
             btn[i].setOnClickListener(this);
         }
     }
-
-
     @Override
     public void onClick(View v) {
-        weight_input = (EditText) findViewById(R.id.Vweightchk_weight);
-        length_input = (EditText) findViewById(R.id.Vweightchk_length);
-        result_view = (TextView) findViewById(R.id.Vweightchk_resultView);
-        flag = v.getId();
+
+
+
+        imm.hideSoftInputFromWindow(weight_input.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(length_input.getWindowToken(), 0);
+
 
         if (v.getId() == R.id.Vweightchk_backActivity){
             finish();
         }else{
-
+            flag = v.getId();
             if (v.getId() == R.id.Vweightchk_length || v.getId() == R.id.Vweightchk_weight){  // 숫자 더하기
                 int user_intput;
                 Button b = (Button) findViewById(v.getId());
 
                 if (v.getId()== R.id.Vweightchk_length){
+                    Toast.makeText(getApplicationContext(),"111",Toast.LENGTH_SHORT).show();
                     length_input.setText(length_input.getText().toString()+b.getText().toString());
                 }else if (v.getId()== R.id.Vweightchk_weight){
+                    Toast.makeText(getApplicationContext(),"222",Toast.LENGTH_SHORT).show();
                     weight_input.setText(weight_input.getText().toString()+b.getText().toString());
                 }
 
@@ -89,7 +103,9 @@ public class WeightChkV10 extends Activity implements View.OnClickListener {
                 }
             }else { //숫자 입력부
                 Button b = (Button) findViewById(v.getId());
+
                 if (flag == R.id.Vweightchk_length){
+
                     length_input.setText(length_input.getText().toString()+b.getText().toString());
 
                 }else if (flag == R.id.Vweightchk_weight){
