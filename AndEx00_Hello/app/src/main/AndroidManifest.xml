@@ -10,7 +10,16 @@
         android:theme="@style/AppTheme">
 
 
-        <activity android:name=".Relative_Lay03">
+        <activity android:name=".Absolute_lay01">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".Relative_Lay04">
 
 
         </activity>
@@ -43,10 +52,6 @@
 
         <activity android:name=".WeightChkV10"
             android:windowSoftInputMode="stateHidden" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
 
         </activity>
 
