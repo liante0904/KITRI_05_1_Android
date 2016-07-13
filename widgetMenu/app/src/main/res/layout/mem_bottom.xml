@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:orientation="horizontal"
+    >
+
+
+    <TextView
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="**UPDATE**"/>
+
+
+        <View
+            android:layout_height="20px"
+            android:background="#FFFFFF"
+               />
+        <TableRow>
+
+            <TextView
+                android:text="name"
+                android:layout_height="150px"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:background="@color/colororange"
+
+                />
+
+
+
+            <EditText
+                android:layout_height="150px"
+                android:layout_width="wrap_content"
+                android:background="@color/colorAccent"
+                />
+        </TableRow>
+
+        <View
+            android:layout_height="20px"
+            android:background="#FFFFFF"
+            />
+
+        <TableRow>
+
+            <TextView
+                android:text="ID"
+                android:layout_height="150px"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:background="@color/colororange"
+
+                />
+
+            <EditText
+                android:layout_height="150px"
+                android:layout_width="wrap_content"
+                android:background="@color/colorAccent"
+                />
+        </TableRow>
+        <View
+            android:layout_height="20px"
+            android:background="#FFFFFF"
+            />
+        <TableRow>
+
+            <TextView
+                android:text="passwd"
+                android:layout_height="150px"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:background="@color/colororange"
+                />
+
+
+            <EditText
+                android:layout_height="150px"
+                android:layout_width="wrap_content"
+                android:background="@color/colorAccent"
+                />
+        </TableRow>
+        <View
+            android:layout_height="20px"
+            android:background="#FFFFFF"
+            />
+        <TableRow>
+
+            <TextView
+                android:text="email"
+                android:layout_height="150px"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:background="@color/colororange"
+                />
+
+            <EditText
+                android:layout_height="150px"
+                android:layout_width="wrap_content"
+                android:background="@color/colorAccent"
+                />
+        </TableRow>
+        <View
+            android:layout_height="20px"
+            android:background="#FFFFFF"
+            />
+        <TableRow>
+
+            <TextView
+                android:layout_height="150px"
+                android:layout_width="wrap_content"
+                android:text="phone"
+                android:gravity="center"
+                android:background="@color/colororange"
+
+                />
+
+            <EditText
+                android:layout_height="150px"
+                android:layout_width="wrap_content"
+                android:background="@color/colorAccent"
+                />
+        </TableRow>
+        <View
+            android:layout_height="20px"
+            android:background="#FFFFFF"
+            />
+        <TableRow>
+
+            <TextView
+                android:text="address"
+                android:gravity="center"
+                android:layout_height="150px"
+                android:layout_width="wrap_content"
+                android:background="@color/colororange"
+
+                />
+
+            <EditText
+                android:layout_height="150px"
+                android:layout_width="wrap_content"
+                android:background="@color/colorAccent"
+                />
+        </TableRow>
+        <View
+            android:layout_height="20px"
+            android:background="#FFFFFF"
+            />
+
+
+    <TableLayout>
+        <TableRow>
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Join"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="Cancle"
+                android:layout_weight="1"
+                />
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+    <TextView
+        android:gravity="center"
+        android:text="한국정보기술연구원 웹앱 프로그래밍 과정"/>
+    />
+    </TableLayout>
+

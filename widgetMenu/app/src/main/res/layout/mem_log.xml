@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:stretchColumns="1"
+            >
+
+            <TextView
+                android:id="@+id/memtop_maintext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="30dp"
+                android:text="**LOOGIN**"
+                android:textSize="30sp"
+                android:gravity="center"
+
+                />
+
+
+            <TableRow
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                >
+
+                <TextView
+                    android:text="ID"
+                    android:layout_marginRight="5dp"
+
+                    android:textSize="20sp"
+                    android:layout_height="300px"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/colororange"
+
+
+                    />
+
+                <EditText
+                    android:layout_marginRight="5dp"
+
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorAccent"
+
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp">
+
+
+                <TextView
+                    android:text="passwd"
+                    android:layout_marginRight="5dp"
+
+                    android:textSize="20sp"
+                    android:layout_height="300px"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:background="@color/colororange"
+
+
+                    />
+
+
+                <EditText
+                    android:layout_marginRight="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:background="@color/colorAccent"
+                    />
+            </TableRow>
+            <LinearLayout
+                android:id="@+id/memtop_btlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/memtop_endtext"
+                >
+
+
+                <Button
+                    android:layout_height="200px"
+                    android:layout_width="0dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:text="LOGIN"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+
+                    android:layout_height="200px"
+                    android:layout_width="0dp"
+
+                    android:text="Cancle"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+
+
+        </TableLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
