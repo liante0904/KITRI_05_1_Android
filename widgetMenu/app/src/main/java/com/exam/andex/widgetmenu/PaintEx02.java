@@ -48,11 +48,10 @@ public class PaintEx02 extends Activity {
             paint.setStrokeWidth(550f);
 
             canvas.drawRect(350,700,450,1000,paint);
-
-            paint.setColor(Color.RED);
-            paint.setStrokeWidth(550f);
-
             canvas.drawRect(650,700,750,1000,paint);
+            canvas.drawRect(100, 550, 300,600,paint);
+            canvas.drawRect(800, 550, 1000,600,paint);
+
 
         }
     }

@@ -10,7 +10,7 @@
         android:theme="@style/AppTheme">
 
 
-        <activity android:name=".Absolute_lay01">
+        <activity android:name=".ActivityEx01">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
