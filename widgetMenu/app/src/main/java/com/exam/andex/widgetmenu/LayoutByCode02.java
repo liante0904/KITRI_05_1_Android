@@ -24,7 +24,6 @@ public class LayoutByCode02 extends Activity {
 
 
         btn1.setOnClickListener(new View.OnClickListener(){
-
             @Override
             public void onClick(View v) {
                 if (linearLayout1.getOrientation() == LinearLayout.HORIZONTAL){
@@ -44,7 +43,9 @@ public class LayoutByCode02 extends Activity {
         Button btn3 = new Button(this);
         btn3.setText("버튼2");
 
-        linearLayout1.addView(btn1, new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT));
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+
+        linearLayout1.addView(btn1, params);
         linearLayout1.addView(btn2, new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT));
         linearLayout1.addView(btn3, new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT));
 

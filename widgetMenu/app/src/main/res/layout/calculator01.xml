@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageButton
+            android:id="@+id/Vcalcul_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backkey"
+            android:layout_gravity="left"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Android Calculator"
+                android:gravity="left"
+                android:textSize="30sp"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="right"
+            android:textSize="30sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+        <Button
+            android:id="@+id/vCancelbt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:layout_weight="1"
+            />
+
+            <Button
+                android:id="@+id/vBackbt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="←"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/vEQbt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="="
+                android:layout_weight="40"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <Button
+                android:id="@+id/v1bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/v2bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="2"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/v3bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/vDivibt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="÷"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <Button
+                android:id="@+id/v4bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="4"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/v5bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/v6bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/vMulitbt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="×"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <Button
+                android:id="@+id/v7bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="7"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/v8bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="8"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/v9bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="9"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/vPlusbt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="＋"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="98"
+                ></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <Button
+                    android:id="@+id/v0bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_weight="10"
+                    />
+
+                <Button
+                    android:id="@+id/vdotbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:layout_weight="4"
+                    />
+                <Button
+                    android:id="@+id/vsubtractbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="_"
+                    android:layout_weight="4"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

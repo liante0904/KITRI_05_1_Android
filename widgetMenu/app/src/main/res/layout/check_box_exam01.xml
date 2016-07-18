@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="25">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:text="평점 체크"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/food"/>
+
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="1. 맛"
+                />
+            <CheckBox
+                android:id="@+id/checkbox3_select1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:layout_weight="1"
+                />
+
+
+            <CheckBox
+                android:id="@+id/checkbox3_select1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:layout_weight="1"
+                />
+
+            <CheckBox
+                android:id="@+id/checkbox3_select1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:layout_weight="1"
+
+                />
+
+        </TableRow>
+
+
+        <TableRow>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="2. 양"/>
+            <CheckBox
+                android:id="@+id/checkbox3_select2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:layout_weight="1"
+                />
+
+
+            <CheckBox
+                android:id="@+id/checkbox3_select2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:layout_weight="1"
+                />
+
+            <CheckBox
+                android:id="@+id/checkbox3_select2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:layout_weight="1"
+
+                />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="3. 가격"/>
+            <CheckBox
+                android:id="@+id/checkbox3_select3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:layout_weight="1"
+                />
+
+
+            <CheckBox
+                android:id="@+id/checkbox3_select3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:layout_weight="1"
+                />
+
+            <CheckBox
+                android:id="@+id/checkbox3_select3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:layout_weight="1"
+
+                />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="4. 신선도"/>
+            <CheckBox
+                android:id="@+id/checkbox3_select4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:layout_weight="1"
+                />
+
+
+            <CheckBox
+                android:id="@+id/checkbox3_select4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:layout_weight="1"
+                />
+
+            <CheckBox
+                android:id="@+id/checkbox3_select4_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:layout_weight="1"
+
+                />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="5. 서비스"/>
+            <CheckBox
+                android:id="@+id/checkbox3_select5_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:layout_weight="1"
+                />
+
+
+            <CheckBox
+                android:id="@+id/checkbox3_select5_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:layout_weight="1"
+                />
+
+            <CheckBox
+                android:id="@+id/checkbox3_select5_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckboxClicked"
+                android:layout_weight="1"
+
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:orientation="vertical"
+        >
+
+
+
+
+
+        <TextView
+            android:id="@+id/checkbox2_result"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택하세요!"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
