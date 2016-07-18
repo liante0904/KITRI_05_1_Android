@@ -12,7 +12,7 @@
 
 
 
-        <activity android:name=".PaintEx01">
+        <activity android:name=".PaintEx02">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
