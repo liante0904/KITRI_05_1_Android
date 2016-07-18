@@ -34,9 +34,19 @@ public class Gamecoll extends Activity implements View.OnClickListener {
              intent = new Intent(getApplicationContext(), GuGuDan01.class);
         }else if (v.getId() == actBtn[1]){
              intent = new Intent(getApplicationContext(), Calculator01.class);
+
         }else if (v.getId() == actBtn[2]) {
              intent = new Intent(getApplicationContext(), ImageView_ex02.class);
+        }else if (v.getId() == actBtn[3]){
+            intent = new Intent(getApplicationContext(), TarotV01.class);
+        }else if (v.getId() == actBtn[4]){
+            intent = new Intent(getApplicationContext(), Lotto.class);
+        }else if (v.getId() == actBtn[5]){
+            intent = new Intent(getApplicationContext(), Inflate03_SungJukGraph.class);
+        }else if (v.getId() == actBtn[6]){
+            intent = new Intent(getApplicationContext(), GaWiBaWiBoV01.class);
         }
+
         startActivity(intent);
         finish();
 

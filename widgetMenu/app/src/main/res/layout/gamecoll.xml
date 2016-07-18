@@ -53,13 +53,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="cal"/>
+                android:text="Calculator"/>
             <Button
                 android:id="@+id/Gamecoll_bt3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="img"/>
+                android:text="image Changer"/>
 
         </LinearLayout>
         <LinearLayout
@@ -74,19 +74,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="1"/>
+                android:text="Taro"/>
             <Button
                 android:id="@+id/Gamecoll_bt5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="1"/>
+                android:text="Lotto"/>
             <Button
                 android:id="@+id/Gamecoll_bt6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="1"/>
+                android:text="Grade Graph"/>
 
         </LinearLayout>
         <LinearLayout
@@ -101,13 +101,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="1"/>
+                android:text="RSP game"/>
             <Button
                 android:id="@+id/Gamecoll_bt8"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="1"/>
+                android:text="Weight checker"/>
             <Button
                 android:id="@+id/Gamecoll_bt9"
                 android:layout_width="match_parent"

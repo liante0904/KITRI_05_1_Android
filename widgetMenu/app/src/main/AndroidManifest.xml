@@ -11,8 +11,6 @@
 
 
 
-
-
         <activity android:name=".Gamecoll">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,20 +26,17 @@
 
         </activity>
 
-
-
-
-        <activity android:name=".Lotto">
-
-
-        </activity>
-
         <activity android:name=".Select_ex02">
         </activity>
 
         <activity android:name=".GuGuDan01"></activity>
         <activity android:name=".Calculator01"></activity>
         <activity android:name=".ImageView_ex02"></activity>
+        <activity android:name=".TarotV01"></activity>
+        <activity android:name=".Lotto"></activity>
+        <activity android:name=".Inflate03_SungJukGraph"></activity>
+        <activity android:name=".GaWiBaWiBoV01"></activity>
+
     </application>
 
 </manifest>
