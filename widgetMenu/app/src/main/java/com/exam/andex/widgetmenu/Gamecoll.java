@@ -14,7 +14,7 @@ public class Gamecoll extends Activity implements View.OnClickListener {
     int[] actBtn = {R.id.Gamecoll_bt1,R.id.Gamecoll_bt2,R.id.Gamecoll_bt3,R.id.Gamecoll_bt4,R.id.Gamecoll_bt5,R.id.Gamecoll_bt6,R.id.Gamecoll_bt7,R.id.Gamecoll_bt8,
             R.id.Gamecoll_bt9};
     Button[] actBtns = new Button[actBtn.length];
-
+    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,12 +31,14 @@ public class Gamecoll extends Activity implements View.OnClickListener {
 
 
         if (v.getId()== actBtn[0]){
-
-            Intent intent = new Intent(getApplicationContext(), CheckBox02.class);
-            startActivity(intent);
-            finish();
+             intent = new Intent(getApplicationContext(), GuGuDan01.class);
+        }else if (v.getId() == actBtn[1]){
+             intent = new Intent(getApplicationContext(), Calculator01.class);
+        }else if (v.getId() == actBtn[2]) {
+             intent = new Intent(getApplicationContext(), ImageView_ex02.class);
         }
+        startActivity(intent);
+        finish();
 
-
-    }
+        }
 }

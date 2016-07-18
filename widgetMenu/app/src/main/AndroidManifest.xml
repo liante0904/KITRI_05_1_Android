@@ -38,6 +38,10 @@
 
         <activity android:name=".Select_ex02">
         </activity>
+
+        <activity android:name=".GuGuDan01"></activity>
+        <activity android:name=".Calculator01"></activity>
+        <activity android:name=".ImageView_ex02"></activity>
     </application>
 
 </manifest>
