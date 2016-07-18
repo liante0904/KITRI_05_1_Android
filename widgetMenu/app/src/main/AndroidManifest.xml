@@ -10,13 +10,26 @@
         android:theme="@style/AppTheme">
 
 
-<activity android:name=".Lotto">
 
-    <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
 
-        <category android:name="android.intent.category.LAUNCHER" />
-    </intent-filter>
+        <activity android:name=".PaintEx01">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+
+
+
+
+
+
+
+        <activity android:name=".Lotto">
+
 
 </activity>
 

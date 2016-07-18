@@ -29,10 +29,8 @@ public class CheckBox02 extends Activity {
         Button checkbox2_chkBT;
         checkbox2_chkBT = (Button) findViewById(R.id.checkbox2_chkBT);
 
-
         Button checkbox2_initBT = new Button(this);
         checkbox2_initBT =  (Button) findViewById(R.id.checkbox2_initBT);
-
 
         checkbox2_chkBT.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,19 +38,13 @@ public class CheckBox02 extends Activity {
             boolean chkchk = false;
             String resultText = "";
 
-
-
-
                 for(int i=0; i<chkbox.length;i++) {
 
                     if (chkboxs[i].isChecked() == true){
                         chkchk= true;
                          resultText += chkboxs[i].getText().toString() + " ";
                     }
-
-                    text.set (text.g(num[i])
                 }
-
                     resultText += "\n 가 체크 되었습니다.";
                 if (chkchk == false){
                     resultText= ("체크된것이 없습니다.");
@@ -70,31 +62,14 @@ public class CheckBox02 extends Activity {
                 result.setText("초기화 되었습니다. 다시 체크해주세요.");
             }
         });
-
-
-
-
     }
 
-
     public void onCheckboxClicked(View view){
-
         boolean checked = ((CheckBox) view).isChecked();
-
         if (view.getId() == R.id.checkbox2_all){
             for (int i=0;i<chkboxs.length;i++ ){
                 chkboxs[i].setChecked(checked);
             }
         }
-
-
-
-
-
-
-
-
     }
-
-
 }

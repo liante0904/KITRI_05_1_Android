@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="30"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="** 꽃 리스트 모두 선택"/>
+        <CheckBox
+            android:id="@+id/checkbox2_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:onClick="onCheckboxClicked"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        >
+
+
+        <CheckBox
+            android:id="@+id/checkbox2_select1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="해바라기"
+            android:onClick="onCheckboxClicked"
+            />
+
+
+        <CheckBox
+            android:id="@+id/checkbox2_select2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="장미"
+            android:onClick="onCheckboxClicked"
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox2_select3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="백합"
+            android:onClick="onCheckboxClicked"
+            />
+        <CheckBox
+            android:id="@+id/checkbox2_select4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="들꽃"
+            android:onClick="onCheckboxClicked"
+            />
+        <CheckBox
+            android:id="@+id/checkbox2_select5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카네이션"
+            android:onClick="onCheckboxClicked"
+            />
+        <CheckBox
+            android:id="@+id/checkbox2_select6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="후리지아"
+            android:onClick="onCheckboxClicked"
+            />
+
+        <TextView
+            android:id="@+id/checkbox2_result"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택하세요!"/>
+
+        <Button
+            android:id="@+id/checkbox2_chkBT"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="체크확인"/>
+
+        <Button
+            android:id="@+id/checkbox2_initBT"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="체크 초기화"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
