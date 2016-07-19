@@ -48,7 +48,7 @@ public class Gamecoll extends Activity implements View.OnClickListener {
         }
 
         startActivity(intent);
-        finish();
+        //    finish();
 
         }
 }
