@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/apple"
+        android:title="애플"/>
+
+    <item
+        android:id="@+id/google"
+        android:title="구글"/>
+
+    <item
+        android:id="@+id/ms"
+        android:title="마이크로 소프트"/>
+
+    <item
+        android:id="@+id/amazon"
+        android:title="아마존"/>
+
+
+</menu>

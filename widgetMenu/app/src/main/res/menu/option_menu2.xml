@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/optionmenu2_gugudan"
+        android:title="구구단"/>
+
+    <item
+        android:id="@+id/optionmenu2_calculator"
+        android:title="Calculator"/>
+
+    <item
+        android:id="@+id/optionmenu2_img_charger"
+        android:title="ImageChager"/>
+
+    <item
+        android:id="@+id/optionmenu2_taro"
+        android:title="타로"/>
+
+
+    <item
+        android:id="@+id/optionmenu2_lotto"
+        android:title="로또"/>
+
+</menu>

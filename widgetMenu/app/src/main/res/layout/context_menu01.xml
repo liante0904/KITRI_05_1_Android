@@ -10,11 +10,12 @@
         android:layout_height="wrap_content"
         android:layout_weight="1">
         <TextView
+            android:id="@+id/contextmenu_menu01"
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="20dp"
-            android:text="옵션 메뉴 확인은 \n 메뉴 버튼을 눌러주세요! \n \n버전 2.3 이상은 액션바의\n오버플로우 영역입니다"/>
+            android:text="context 메뉴 확인은 \n 메뉴 버튼을 눌러주세요! \n "/>
     </LinearLayout>
 
     <LinearLayout

@@ -16,7 +16,7 @@ import android.widget.Toast;
 public class WeightChkV10 extends Activity implements View.OnClickListener {
 
     int btns[] = {R.id.Vweightchk_backActivity, R.id.Vweightchk_0BT, R.id.Vweightchk_1BT, R.id.Vweightchk_2BT, R.id.Vweightchk_3BT, R.id.Vweightchk_4BT, R.id.Vweightchk_5BT,
-            R.id.Vweightchk_6BT, R.id.Vweightchk_7BT, R.id.Vweightchk_8BT, R.id.Vweightchk_9BT, R.id.Vweightchk_0BT, R.id.Vweightchk_dotBT, R.id.Vweightchk_goBT
+            R.id.Vweightchk_6BT, R.id.Vweightchk_7BT, R.id.Vweightchk_8BT, R.id.Vweightchk_9BT, R.id.Vweightchk_dotBT, R.id.Vweightchk_goBT
     };
 
     Button btn[] = new Button[btns.length];
