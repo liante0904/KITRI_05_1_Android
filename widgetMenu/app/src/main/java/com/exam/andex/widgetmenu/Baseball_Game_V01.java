@@ -36,16 +36,21 @@ public class Baseball_Game_V01 extends Activity implements View.OnClickListener 
             baseball_game_input[i] = (EditText) findViewById(baseball_game_inputs[i]);
 
         }
-
-
         result_view = (TextView) findViewById(R.id.baseball_game_resultView);
+        getRandom(); // 0~9 중복없는 난수
 
 
+
+            for (int i = 0; i < btns.length; i++) {
+                btn[i] = (Button) findViewById(btns[i]);
+                btn[i].setOnClickListener(this);
+            }
+        }
+
+
+    public void getRandom(){
         for (int p = 0; p < 3; p++) { // 3개의 난수
-
-
             for (int i = 0; i < 3; i++) { // 난수의 중복체크
-
                 answer[i] = String.valueOf(UserObj.getRandom(9));
                 for (int k = 0; k < i; k++) {
                     if (answer[i] == answer[k]) {
@@ -53,13 +58,6 @@ public class Baseball_Game_V01 extends Activity implements View.OnClickListener 
                         break;
                     }
                 }
-            }
-            // 0~9 난수
-
-
-            for (int i = 0; i < btns.length; i++) {
-                btn[i] = (Button) findViewById(btns[i]);
-                btn[i].setOnClickListener(this);
             }
         }
     }
@@ -93,33 +91,47 @@ public class Baseball_Game_V01 extends Activity implements View.OnClickListener 
                     user_guess[i] =  baseball_game_input[i].getText().toString(); // String
                 } // 입력값 가져오기
                 Toast.makeText(getApplicationContext(),"사용자 입력:"+ user_guess[0] + user_guess[1]+ user_guess[2],Toast.LENGTH_LONG).show();
-                    if (user_guess[0].equals(answer[0]) && user_guess[1].equals(answer[1]) && user_guess[2].equals(answer[2]) ){ // 정답일때
+                if (user_guess[0].equals(answer[0]) && user_guess[1].equals(answer[1]) && user_guess[2].equals(answer[2]) ){ // 정답일때
 
                         Toast.makeText(getApplicationContext(),"정답입니다.",Toast.LENGTH_LONG).show();
+                    result_view.setText(answer[0]+", " + answer[1]+", " + answer[2]+", " + "정답입니다. \n  자동으로 게임이 초기화 됩니다.  \n 새로운 3자리 숫자를 입력하세요.");
+                    getRandom();
+                    strike = 0; ball =0;
 
                     }else {// 오답일때
 
-                        for (int a1 =0; a1<user_guess.length; a1++){ //ball 판정
+
+
+
+                        for (int b1 = 0 ; b1<user_guess.length; b1++){ // strike 판정 (인덱스를 기준으로 같은숫자가 있을떄
+                            if (answer[b1].equals(user_guess[b1])){
+                                strike++;
+                            }
+                        }
+                    if (answer[0].equals(user_guess[1]) || answer[0].equals(user_guess[2])){
+                        ball++;
+                    }
+
+                    if (answer[1].equals(user_guess[0]) || answer[1].equals(user_guess[2])){
+                        ball++;
+                    }
+
+                    if (answer[2].equals(user_guess[0]) || answer[2].equals(user_guess[1])){
+                        ball++;
+                    }
+
+        /*            for (int a1 =0; a1<user_guess.length; a1++){ // ball 판정
                             for (int a2 =0; a2<user_guess.length; a2++){
 
                                 if (answer[a1].equals(user_guess[a2])){
                                     ball++;
                                 }
-
                             }
-
-                        }
-
-                        for (int b1 = 0 ; b1<user_guess.length; b1++){
-
-                            if (answer[b1].equals(user_guess[b1])){
-                                strike++;
-                            }
-                            }
-                        Toast.makeText(getApplicationContext(),"오답입니다." + String.valueOf(ball) + String.valueOf(strike) ,Toast.LENGTH_LONG ).show();
-
+                        }*/
+                        Toast.makeText(getApplicationContext(), String.valueOf(ball) +"볼"+ String.valueOf(strike) +"스트라이크"+ "\n 오답입니다." ,Toast.LENGTH_LONG ).show();
+                    result_view.setText("틀렸습니다!!! " +  String.valueOf(ball) +"볼,   "+ String.valueOf(strike) +"스트라이크, 입니다. \n 잘 생각해보세요.");
+                    strike =0;  ball = 0;
                     }
-                 // 입력값 가져오기
             } else { //숫자 입력부
 
 
