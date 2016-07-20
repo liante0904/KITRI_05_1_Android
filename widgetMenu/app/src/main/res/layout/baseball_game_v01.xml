@@ -22,7 +22,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
                 <Button
-                    android:id="@+id/guessgame_backActivity"
+                    android:id="@+id/baseball_game_backActivity"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
@@ -99,8 +99,22 @@
                             android:layout_weight="1"
                             android:orientation="horizontal">
                             <EditText
-                                android:id="@+id/guessgame_input"
-                                android:layout_width="wrap_content"
+                                android:id="@+id/baseball_game_input1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:inputType="number"/>
+
+                            <EditText
+                                android:id="@+id/baseball_game_input2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:inputType="number"/>
+
+                            <EditText
+                                android:id="@+id/baseball_game_input3"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:inputType="number"/>
@@ -128,7 +142,7 @@
                             android:layout_weight="9"
                             android:background="@color/colorbeige">
                             <TextView
-                                android:id="@+id/guessgame_resultView"
+                                android:id="@+id/baseball_game_resultView"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:gravity="center"
@@ -152,7 +166,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1">
                             <Button
-                                android:id="@+id/guessgame_7BT"
+                                android:id="@+id/baseball_game_7BT"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -165,7 +179,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1">
                             <Button
-                                android:id="@+id/guessgame_8BT"
+                                android:id="@+id/baseball_game_8BT"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -178,7 +192,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1">
                             <Button
-                                android:id="@+id/guessgame_9BT"
+                                android:id="@+id/baseball_game_9BT"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -192,7 +206,7 @@
                             android:layout_weight="1">
 
                             <Button
-                                android:id="@+id/guessgame_escape"
+                                android:id="@+id/baseball_game_escape"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -210,7 +224,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1">
                             <Button
-                                android:id="@+id/guessgame_4BT"
+                                android:id="@+id/baseball_game_4BT"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -223,7 +237,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1">
                             <Button
-                                android:id="@+id/guessgame_5BT"
+                                android:id="@+id/baseball_game_5BT"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -236,7 +250,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1">
                             <Button
-                                android:id="@+id/guessgame_6BT"
+                                android:id="@+id/baseball_game_6BT"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -269,7 +283,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1">
                             <Button
-                                android:id="@+id/guessgame_1BT"
+                                android:id="@+id/baseball_game_1BT"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -283,7 +297,7 @@
                             android:layout_weight="1">
 
                             <Button
-                                android:id="@+id/guessgame_2BT"
+                                android:id="@+id/baseball_game_2BT"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -296,7 +310,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1">
                             <Button
-                                android:id="@+id/guessgame_3BT"
+                                android:id="@+id/baseball_game_3BT"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -323,7 +337,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1">
                             <Button
-                                android:id="@+id/guessgame_dotBT"
+                                android:id="@+id/baseball_game_dotBT"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -336,7 +350,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1">
                             <Button
-                                android:id="@+id/guessgame_0BT"
+                                android:id="@+id/baseball_game_0BT"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"
@@ -354,7 +368,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1">
                             <Button
-                                android:id="@+id/guessgame_goBT"
+                                android:id="@+id/baseball_game_goBT"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_weight="1"

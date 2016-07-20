@@ -26,6 +26,7 @@ public class Alert_Dialog01 extends Activity {
         builder.create();
         builder.setTitle("배고픕니다.");
         builder.setMessage("기부해주세요.");
+        builder.setIcon(R.drawable.android_icon);
         builder.setNegativeButton("취소", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
