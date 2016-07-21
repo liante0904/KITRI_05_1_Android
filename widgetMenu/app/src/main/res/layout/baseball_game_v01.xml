@@ -28,6 +28,7 @@
                     android:layout_gravity="left"
                     android:text="뒤로"/>
 
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -43,7 +44,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"></LinearLayout>
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:onClick="baseball_game_todo"
+                    android:text="게임 설명 보기"/>
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -60,6 +69,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1">
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"

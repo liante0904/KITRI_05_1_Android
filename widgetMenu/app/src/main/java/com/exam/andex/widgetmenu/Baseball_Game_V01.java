@@ -1,6 +1,8 @@
 package com.exam.andex.widgetmenu;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,11 +19,12 @@ public class Baseball_Game_V01 extends Activity implements View.OnClickListener 
             R.id.baseball_game_6BT, R.id.baseball_game_7BT, R.id.baseball_game_8BT, R.id.baseball_game_9BT, R.id.baseball_game_dotBT, R.id.baseball_game_goBT};
 
     Button btn[] = new Button[btns.length];
+    AlertDialog.Builder builder;
 
 
     int length;
 
-    int strike, ball =0;
+    int strike, ball =0, cnt = 1;
     int[] baseball_game_inputs = {R.id.baseball_game_input1, R.id.baseball_game_input2, R.id.baseball_game_input3};
     private EditText[] baseball_game_input = new EditText[baseball_game_inputs.length];
     private TextView result_view;
@@ -32,6 +35,7 @@ public class Baseball_Game_V01 extends Activity implements View.OnClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.baseball_game_v01);
+        builder = new AlertDialog.Builder(this);
         for (int i = 0; i < baseball_game_inputs.length; i++) {
             baseball_game_input[i] = (EditText) findViewById(baseball_game_inputs[i]);
 
@@ -41,11 +45,11 @@ public class Baseball_Game_V01 extends Activity implements View.OnClickListener 
 
 
 
-            for (int i = 0; i < btns.length; i++) {
-                btn[i] = (Button) findViewById(btns[i]);
-                btn[i].setOnClickListener(this);
-            }
+        for (int i = 0; i < btns.length; i++) {
+            btn[i] = (Button) findViewById(btns[i]);
+            btn[i].setOnClickListener(this);
         }
+    }
 
 
     public void getRandom(){
@@ -61,6 +65,25 @@ public class Baseball_Game_V01 extends Activity implements View.OnClickListener 
             }
         }
     }
+
+    public void baseball_game_todo(View view){
+
+
+        builder.create();
+        builder.setTitle("숫자 야구게임 규칙입니다.");
+        builder.setMessage("해당 게임은 숫자 3자리를 맞추는 게임입니다. \n\n 1. 숫자 3개를 맞추는 게임입니다. \n\n 2. 숫자를 맞췄으나,  해당 자리수가 아니라면 Ball입니다. \n\n 3. 숫자가 그 자리에 알맞다면 Strike입니다. \n\n 행운을 빕니다. ");
+        builder.setIcon(R.drawable.android_icon);
+        builder.setPositiveButton("게임하러 가기", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Toast.makeText(getApplicationContext(), "게임이 시작되었습니다.", Toast.LENGTH_LONG).show();
+            }
+        });
+        builder.show();
+    }
+
+
+
     @Override
     public void onClick(View v) {
         Toast.makeText(getApplicationContext(),"정답:"+answer[0]+answer[1]+answer[2],Toast.LENGTH_LONG).show();
@@ -93,21 +116,19 @@ public class Baseball_Game_V01 extends Activity implements View.OnClickListener 
                 Toast.makeText(getApplicationContext(),"사용자 입력:"+ user_guess[0] + user_guess[1]+ user_guess[2],Toast.LENGTH_LONG).show();
                 if (user_guess[0].equals(answer[0]) && user_guess[1].equals(answer[1]) && user_guess[2].equals(answer[2]) ){ // 정답일때
 
-                        Toast.makeText(getApplicationContext(),"정답입니다.",Toast.LENGTH_LONG).show();
-                    result_view.setText(answer[0]+", " + answer[1]+", " + answer[2]+", " + "정답입니다. \n  자동으로 게임이 초기화 됩니다.  \n 새로운 3자리 숫자를 입력하세요.");
+                    Toast.makeText(getApplicationContext(),"정답입니다.",Toast.LENGTH_LONG).show();
+                    result_view.setText("정답 : " + answer[0]+", " + answer[1]+", " + answer[2]+", \n" + cnt  +" 번째로 정답을 맞추셨습니다.. \n  자동으로 게임이 초기화 됩니다.  \n 새로운 3자리 숫자를 입력하세요.");
                     getRandom();
                     strike = 0; ball =0;
 
-                    }else {// 오답일때
+                }else {// 오답일때
 
-
-
-
-                        for (int b1 = 0 ; b1<user_guess.length; b1++){ // strike 판정 (인덱스를 기준으로 같은숫자가 있을떄
-                            if (answer[b1].equals(user_guess[b1])){
-                                strike++;
-                            }
+                cnt++;
+                    for (int b1 = 0 ; b1<user_guess.length; b1++){ // strike 판정 (인덱스를 기준으로 같은숫자가 있을떄
+                        if (answer[b1].equals(user_guess[b1])){
+                            strike++;
                         }
+                    }
                     if (answer[0].equals(user_guess[1]) || answer[0].equals(user_guess[2])){
                         ball++;
                     }
@@ -128,10 +149,10 @@ public class Baseball_Game_V01 extends Activity implements View.OnClickListener 
                                 }
                             }
                         }*/
-                        Toast.makeText(getApplicationContext(), String.valueOf(ball) +"볼"+ String.valueOf(strike) +"스트라이크"+ "\n 오답입니다." ,Toast.LENGTH_LONG ).show();
-                    result_view.setText("틀렸습니다!!! " +  String.valueOf(ball) +"볼,   "+ String.valueOf(strike) +"스트라이크, 입니다. \n 잘 생각해보세요.");
+                    Toast.makeText(getApplicationContext(), String.valueOf(ball) +"볼"+ String.valueOf(strike) +"스트라이크"+ "\n 오답입니다." ,Toast.LENGTH_LONG ).show();
+                    result_view.setText("틀렸습니다!!!   " + cnt + "번째 시도중입니다. \n"  +  String.valueOf(ball) +"볼,   "+ String.valueOf(strike) +"스트라이크, 입니다. \n 잘 생각해보세요.");
                     strike =0;  ball = 0;
-                    }
+                }
             } else { //숫자 입력부
 
 
