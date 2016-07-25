@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
     <TableLayout
@@ -17,44 +18,56 @@
 
         <TableRow>
             <Button
-                android:layout_width="240px"
+                android:id="@+id/mem_main_homeBT"
+                android:layout_width="match_parent"
                 android:layout_height="200px"
+                android:layout_weight="1"
                 android:text="홈으로"
                 android:background="@drawable/bg03_color"
 
                 />
 
             <Button
-                android:layout_width="240px"
+                android:id="@+id/mem_main_loginBT"
+                android:layout_width="match_parent"
                 android:layout_height="200px"
+                android:layout_weight="1"
                 android:text="로그인"
                 android:background="@drawable/bg03_color"
 
                 />
             <Button
-                android:layout_width="240px"
+                android:id="@+id/mem_main_registBT"
+                android:layout_width="match_parent"
                 android:layout_height="200px"
+                android:layout_weight="1"
                 android:text="가입"
                 android:background="@drawable/bg03_color"
 
                 />
             <Button
-                android:layout_width="240px"
+                android:id="@+id/mem_main_modify_accountBT"
+                android:layout_width="match_parent"
                 android:layout_height="200px"
+                android:layout_weight="1"
                 android:text="수정"
                 android:background="@drawable/bg03_color"
 
                 />
             <Button
-                android:layout_width="240px"
+                android:id="@+id/mem_main_close_accountBT"
+                android:layout_width="match_parent"
                 android:layout_height="200px"
+                android:layout_weight="1"
                 android:text="탈퇴"
                 android:background="@drawable/bg03_color"
 
                 />
             <Button
-                android:layout_width="240px"
+                android:id="@+id/mem_main_listBT"
+                android:layout_width="match_parent"
                 android:layout_height="200px"
+                android:layout_weight="1"
                 android:text="목록"
                 android:background="@drawable/bg03_color"
 
@@ -65,184 +78,200 @@
 
     </TableLayout>
 
+    </RelativeLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
         <TextView
             android:id="@+id/memtop_maintext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="**UPDATE**"
-            android:textSize="30sp"
-            android:layout_below="@+id/memtop_topTable"
-            android:layout_centerHorizontal="true"
-
-            />
-
-        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/memtop_btlayout"
-            android:layout_below="@+id/memtop_maintext"
-            >
+            android:text="**Default**"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_below="@+id/memtop_topTable"
+
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/memtop_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
 
 
 
-            <TableRow
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp">
-
-                <TextView
-                    android:text="name"
-                    android:layout_marginRight="5dp"
-                    android:layout_height="match_parent"
-                    android:layout_width="wrap_content"
-                    android:gravity="center"
-                    android:background="@color/colororange"
-
-                    />
-
-                <EditText
-                    android:layout_marginRight="5dp"
-                    android:layout_height="150px"
-                    android:layout_width="wrap_content"
-                    android:background="@color/colorAccent"
+                <TableRow
                     android:layout_weight="1"
-
-                    />
-            </TableRow>
-
-
-            <TableRow
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp">
-
-                <TextView
-                    android:text="ID"
-                    android:layout_marginRight="5dp"
                     android:layout_height="match_parent"
-                    android:layout_width="wrap_content"
-                    android:gravity="center"
-                    android:background="@color/colororange"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:text="name"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:background="@color/colororange"
+
+                        />
+
+                    <EditText
+                        android:layout_marginRight="5dp"
+                        android:layout_height="150px"
+                        android:layout_width="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:layout_weight="1"
+
+                        />
+                </TableRow>
 
 
-                    />
-
-                <EditText
-                    android:layout_marginRight="5dp"
-                    android:layout_height="150px"
-                    android:layout_width="wrap_content"
-                    android:background="@color/colorAccent"
+                <TableRow
                     android:layout_weight="1"
-
-                    />
-            </TableRow>
-            <TableRow
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp">
-
-                <TextView
-                    android:text="passwd"
-                    android:layout_marginRight="5dp"
                     android:layout_height="match_parent"
-                    android:layout_width="wrap_content"
-                    android:gravity="center"
-                    android:background="@color/colororange"
-                    />
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:text="ID"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:background="@color/colororange"
 
 
-                <EditText
-                    android:layout_marginRight="5dp"
-                    android:layout_height="150px"
-                    android:layout_width="wrap_content"
-                    android:background="@color/colorAccent"
+                        />
+
+                    <EditText
+                        android:layout_marginRight="5dp"
+                        android:layout_height="150px"
+                        android:layout_width="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:layout_weight="1"
+
+                        />
+                </TableRow>
+                <TableRow
                     android:layout_weight="1"
-
-                    />
-            </TableRow>
-            <TableRow
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp">
-
-                <TextView
-                    android:text="email"
-                    android:layout_marginRight="5dp"
                     android:layout_height="match_parent"
-                    android:layout_width="wrap_content"
-                    android:gravity="center"
-                    android:background="@color/colororange"
-                    />
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
 
-                <EditText
-                    android:layout_marginRight="5dp"
-                    android:layout_height="150px"
-                    android:layout_width="wrap_content"
-                    android:background="@color/colorAccent"
+                    <TextView
+                        android:text="passwd"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:background="@color/colororange"
+                        />
+
+
+                    <EditText
+                        android:layout_marginRight="5dp"
+                        android:layout_height="150px"
+                        android:layout_width="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:layout_weight="1"
+
+                        />
+                </TableRow>
+                <TableRow
                     android:layout_weight="1"
-
-                    />
-            </TableRow>
-            <TableRow
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp">
-
-                <TextView
                     android:layout_height="match_parent"
-                    android:layout_width="wrap_content"
-                    android:text="phone"
-                    android:layout_marginRight="5dp"
-                    android:gravity="center"
-                    android:background="@color/colororange"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
 
-                    />
+                    <TextView
+                        android:text="email"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:background="@color/colororange"
+                        />
 
-                <EditText
-                    android:layout_marginRight="5dp"
-                    android:layout_height="150px"
-                    android:layout_width="wrap_content"
-                    android:background="@color/colorAccent"
+                    <EditText
+                        android:layout_marginRight="5dp"
+                        android:layout_height="150px"
+                        android:layout_width="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:layout_weight="1"
+
+                        />
+                </TableRow>
+                <TableRow
                     android:layout_weight="1"
-
-                    />
-            </TableRow>
-            <TableRow
-                android:layout_weight="1"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp">
-
-                <TextView
-                    android:text="address"
-                    android:layout_marginRight="5dp"
-                    android:gravity="center"
                     android:layout_height="match_parent"
-                    android:layout_width="wrap_content"
-                    android:background="@color/colororange"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
 
-                    />
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:text="phone"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:background="@color/colororange"
 
-                <EditText
-                    android:layout_marginRight="5dp"
-                    android:layout_height="150px"
-                    android:layout_width="wrap_content"
-                    android:background="@color/colorAccent"
+                        />
+
+                    <EditText
+                        android:layout_marginRight="5dp"
+                        android:layout_height="150px"
+                        android:layout_width="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:layout_weight="1"
+
+                        />
+                </TableRow>
+                <TableRow
                     android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
 
-                    />
-            </TableRow>
+                    <TextView
+                        android:text="address"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:background="@color/colororange"
+
+                        />
+
+                    <EditText
+                        android:layout_marginRight="5dp"
+                        android:layout_height="150px"
+                        android:layout_width="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:layout_weight="1"
+
+                        />
+                </TableRow>
 
 
 
-        </TableLayout>
+            </TableLayout>
+        </LinearLayout>
+
+
+       
+
+
 
         <LinearLayout
             android:id="@+id/memtop_btlayout"
@@ -281,7 +310,6 @@
 
 
 
-        </RelativeLayout>
 
 
     </LinearLayout>

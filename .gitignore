@@ -1,4 +1,4 @@
-﻿
+
 # Created by https://www.gitignore.io/api/android
 
 ### Android ###
@@ -46,3 +46,43 @@ captures/
 
 ### Android Patch ###
 gen-external-apklibs
+ANDDB01/ANDDB012/.gitignore
+ANDDB01/ANDDB012/.idea/.name
+ANDDB01/ANDDB012/.idea/compiler.xml
+ANDDB01/ANDDB012/.idea/copyright/profiles_settings.xml
+ANDDB01/ANDDB012/.idea/encodings.xml
+ANDDB01/ANDDB012/.idea/gradle.xml
+ANDDB01/ANDDB012/.idea/misc.xml
+ANDDB01/ANDDB012/.idea/modules.xml
+ANDDB01/ANDDB012/.idea/runConfigurations.xml
+ANDDB01/ANDDB012/.idea/vcs.xml
+ANDDB01/ANDDB012/app/.gitignore
+ANDDB01/ANDDB012/app/build.gradle
+ANDDB01/ANDDB012/app/proguard-rules.pro
+ANDDB01/ANDDB012/app/src/androidTest/java/com/exam/andex/anddb01/ApplicationTest.java
+ANDDB01/ANDDB012/app/src/main/AndroidManifest.xml
+ANDDB01/ANDDB012/app/src/main/java/com/exam/andex/anddb01/MainActivity.java
+ANDDB01/ANDDB012/app/src/main/java/com/exam/andex/anddb01/Memins.java
+ANDDB01/ANDDB012/app/src/main/res/color/txt_color.xml
+ANDDB01/ANDDB012/app/src/main/res/drawable/bt1.png
+ANDDB01/ANDDB012/app/src/main/res/drawable/bt2.jpg
+ANDDB01/ANDDB012/app/src/main/res/layout/activity_main.xml
+ANDDB01/ANDDB012/app/src/main/res/layout/mem_ins.xml
+ANDDB01/ANDDB012/app/src/main/res/mipmap-hdpi/ic_launcher.png
+ANDDB01/ANDDB012/app/src/main/res/mipmap-mdpi/ic_launcher.png
+ANDDB01/ANDDB012/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+ANDDB01/ANDDB012/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+ANDDB01/ANDDB012/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+ANDDB01/ANDDB012/app/src/main/res/values-w820dp/dimens.xml
+ANDDB01/ANDDB012/app/src/main/res/values/colors.xml
+ANDDB01/ANDDB012/app/src/main/res/values/dimens.xml
+ANDDB01/ANDDB012/app/src/main/res/values/strings.xml
+ANDDB01/ANDDB012/app/src/main/res/values/styles.xml
+ANDDB01/ANDDB012/app/src/test/java/com/exam/andex/anddb01/ExampleUnitTest.java
+ANDDB01/ANDDB012/build.gradle
+ANDDB01/ANDDB012/gradle.properties
+ANDDB01/ANDDB012/gradle/wrapper/gradle-wrapper.jar
+ANDDB01/ANDDB012/gradle/wrapper/gradle-wrapper.properties
+ANDDB01/ANDDB012/gradlew
+ANDDB01/ANDDB012/gradlew.bat
+ANDDB01/ANDDB012/settings.gradle

@@ -2,15 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.exam.andex.widgetmenu">
 
+
+    <uses-permission android:name="android.permission.INTERNET">
+
+    </uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
-
         <activity android:name=".Gamecoll">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +22,36 @@
 
         </activity>
 
+
+        <activity android:name=".Mem_main">
+
+
+        </activity>
+
+        <activity android:name=".SawonLogin">
+
+
+
+        </activity>
+
+        <activity android:name=".SawonCertify"></activity>
+        <activity android:name=".Customer_Activity"></activity>
+        <activity android:name=".Product_Activity"></activity>
+        <activity android:name=".Revenue_Activity"></activity>
+
+    <activity android:name=".CalcResult">
+
+    </activity>
+    <activity android:name=".CalcActivity"></activity>
+
+
+
+        <activity android:name=".ResultActivity01">
+
+
+        </activity>
+
+        <activity android:name=".ResultActivity02"></activity>
 
         <activity android:name=".CheckBox02">
 

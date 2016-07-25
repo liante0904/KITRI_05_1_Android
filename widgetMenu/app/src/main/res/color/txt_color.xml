@@ -7,5 +7,7 @@
         ></item>
     <item android:color="#0000FF"/>
 
+    <item android:color="@color/colororange"></item>
+
 
 </selector>
